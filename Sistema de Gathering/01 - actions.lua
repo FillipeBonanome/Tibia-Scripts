@@ -7,7 +7,6 @@ local action = Action()
 function action.onUse(player, item, fromPosition, target, toPosition, isHotkey)
 	local targetId = target:getId()
 	if not gatheringInformations.flowers[targetId] then
-		player:say("oops!")
 		return false
 	end
 	local info = gatheringInformations.flowers[targetId]
